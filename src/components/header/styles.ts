@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 
 export const ContainerHeader = styled.div`
@@ -18,14 +18,51 @@ export const HeaderStyle = styled.div`
     
     
 `
-export const ButtonDarkLight = styled.label`
+export const MoveBallLight = keyframes`
+    0%{
+        transform: translateX(0px);
+        
+    }
+    100%{
+        transform: translateX(30px);
+    }
+
+    
+    
+`
+
+export const MoveBallDark = keyframes`
+    0%{
+        transform: translateX(30px);
+        
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+    
+    
+`
+export const ButtonDark = styled.label`
+    display: flex;
+    background: ${(props) => props.theme['gray-400']};
+    width: 4rem;
+    border-radius: 2rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    justify-content: space-between;
+    color: ${(props) => props.theme['white']};
+`
+
+export const ButtonLight= styled.label`
     display: flex;
     background: ${(props) => props.theme['white']};
     width: 4rem;
     border-radius: 2rem;
     padding: 0.3rem;
     cursor: pointer;
-    transition: background-color 0.5s;
+    
     justify-content: space-between;
     color: ${(props) => props.theme['gray-900']};
 `
@@ -34,7 +71,7 @@ export const BallButton = styled.div`
     height: 1.5rem;
     width: 1.5rem;
     border-radius: 50%;
-    transition: 0.5s;
+    
     position: absolute;
 `
 
@@ -44,4 +81,15 @@ export const ButtonContainer = styled.div`
         opacity: 0;
         position: absolute;
     }
+    
 `
+export const DarkMode = styled(BallButton)`
+     animation: ${MoveBallDark} 0.5s both;  
+    
+`
+export const LightMode = styled(BallButton)`
+    animation: ${MoveBallLight} 0.5s both;
+    
+    
+`
+
