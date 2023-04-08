@@ -1,4 +1,7 @@
-import { ContainerHeader,HeaderStyle,ButtonDarkLight,BallButton} from "./styles";
+import { Moon, Sun } from "phosphor-react";
+import { ContainerHeader,HeaderStyle,ButtonDarkLight,BallButton,ButtonContainer} from "./styles";
+
+
 
 export default function Header(){
     return(
@@ -7,9 +10,15 @@ export default function Header(){
             <HeaderStyle>
                 <h2>Bem vindos <br/>ao nosso site :)</h2>
                 <h1>Portfólio</h1>
-                <ButtonDarkLight>
-                    <BallButton/>
-                </ButtonDarkLight>
+                <ButtonContainer>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="checkbox" />
+                    <ButtonDarkLight htmlFor="checkbox">
+                    
+                        <Sun size={25}/>
+                        <Moon size={25}/>
+                        <BallButton/>
+                    </ButtonDarkLight>
+                </ButtonContainer>
             </HeaderStyle>
         </ContainerHeader>
     )

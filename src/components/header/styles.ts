@@ -20,12 +20,14 @@ export const HeaderStyle = styled.div`
 `
 export const ButtonDarkLight = styled.label`
     display: flex;
-    background: ${(props) => props.theme['green-300']};
-    width: 5rem;
+    background: ${(props) => props.theme['white']};
+    width: 4rem;
     border-radius: 2rem;
     padding: 0.3rem;
     cursor: pointer;
     transition: background-color 0.5s;
+    justify-content: space-between;
+    color: ${(props) => props.theme['gray-900']};
 `
 export const BallButton = styled.div`
     background-color: ${(props) => props.theme['gray-900']};
@@ -33,5 +35,13 @@ export const BallButton = styled.div`
     width: 1.5rem;
     border-radius: 50%;
     transition: 0.5s;
+    position: absolute;
 `
 
+export const ButtonContainer = styled.div`
+    display: flex;
+    input{
+        opacity: 0;
+        position: absolute;
+    }
+`
