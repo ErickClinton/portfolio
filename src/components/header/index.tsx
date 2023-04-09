@@ -1,6 +1,7 @@
 import { Moon, Sun } from "phosphor-react";
 import { ContainerHeader,HeaderStyle,ButtonDark,BallButton,ButtonContainer,DarkMode,LightMode ,ButtonLight} from "./styles";
 import { useState } from "react";
+import { GlobalStyleLight } from "@/src/styles/global";
 
 
 
@@ -41,6 +42,7 @@ export default function Header(){
                                 <Moon size={25}/>
                                 <Sun size={25}/>
                                 <LightMode/>
+                                <GlobalStyleLight/>
                             </ButtonLight>
                         )}
                         

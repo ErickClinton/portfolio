@@ -45,26 +45,26 @@ export const MoveBallDark = keyframes`
 `
 export const ButtonDark = styled.label`
     display: flex;
-    background: ${(props) => props.theme['gray-400']};
+    background: ${(props) => props.theme['gray-100']};
     width: 4rem;
     border-radius: 2rem;
     padding: 0.3rem;
     cursor: pointer;
     transition: background-color 0.5s;
     justify-content: space-between;
-    color: ${(props) => props.theme['white']};
+    color: ${(props) => props.theme['gray-900']};
 `
 
 export const ButtonLight= styled.label`
     display: flex;
-    background: ${(props) => props.theme['white']};
+    background: ${(props) => props.theme['gray-900']};
     width: 4rem;
     border-radius: 2rem;
     padding: 0.3rem;
     cursor: pointer;
     
     justify-content: space-between;
-    color: ${(props) => props.theme['gray-900']};
+    color: ${(props) => props.theme['white']};
 `
 export const BallButton = styled.div`
     background-color: ${(props) => props.theme['gray-900']};
@@ -90,6 +90,6 @@ export const DarkMode = styled(BallButton)`
 export const LightMode = styled(BallButton)`
     animation: ${MoveBallLight} 0.5s both;
     
-    
+    background-color:${(props)=>props.theme['white']}
 `
 
