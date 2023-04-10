@@ -3,9 +3,7 @@ import styled from "styled-components";
 export const ContainerMain = styled.main`
    display: flex;
    justify-content: center;
-   /* border: 1px solid red; */
-   height: 400px; 
-   /* justify-content: space-around; */
+   height: 400px;
    align-items: center;
    img {
     background-color: #00875F;
@@ -14,9 +12,11 @@ export const ContainerMain = styled.main`
    h2 {
     font-size: 19px;
    }
-   h2:hover {
-    font-size: 27px;
-   }
+   div:hover img{ 
+    height: 120px;
+    transform: scale(1);
+    filter: blur(0px);
+}
 `
 export const ContainerContent = styled.div`
     display: grid;
@@ -34,11 +34,7 @@ export const ContainerContent = styled.div`
         width: auto;
         background: red; 
         border-radius: 50%;
-        filter: blur(6px)
-    }
-    img:hover{ 
-        height: 120px;
-        filter: blur(0px)
+        filter: blur(1.55px)
     }
     & .textLink {
         color: inherit;
