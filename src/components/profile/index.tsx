@@ -21,7 +21,6 @@ export default function profile() {
         <ContainerContent className="Renan">
         <div className="card">
                 <div className="front"><Link href={'/'}><img src="https://img.quizur.com/f/img5d570a0a507dc0.74507285.png?lastEdited=1565985298" alt="FOTO ERICK" /></Link></div>
-                
                 </div>
             <Link className="textLink" href={'/'}><h1>Renan dos Santos</h1></Link>
             <h4>Front-end Developer</h4>
