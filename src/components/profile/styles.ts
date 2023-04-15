@@ -61,14 +61,14 @@ export const ContainerContent = styled.div`
         padding-top: 15px;
     }
     & .card {
-        width: 10px
-        heigt: 10px;
+        width: 10px;
+        height: 10px;
         perspective: 1000px;
         position: relative;
     }
     & .front {
-        width: 100%
-        heigt: 100%;
+        width: 100%;
+        height: 100%;
         transition: 700ms;
     
     }
