@@ -6,7 +6,7 @@ export const ContainerHeader = styled.div`
     margin-left: auto;
     width: 90%;
     border-bottom: 1px solid ${(props) => props.theme['green-300']};
-
+    transition: all 0.5s;
 `
 
 export const HeaderStyle = styled.div`
