@@ -57,7 +57,7 @@ export const ContainerContent = styled.div`
         text-decoration: inherit;
     }
     h2 {
-        color: white;
+        
         padding-top: 15px;
     }
     & .card {
